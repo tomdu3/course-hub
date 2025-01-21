@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --font-sans: "Saira", sans-serif;
+    --font-serif: "Righteous", cursive;
+}
+
+.text-sans {
+    font-family: var(--font-sans);
+}
+
+.text-serif {
+    font-family: var(--font-serif);
+}
