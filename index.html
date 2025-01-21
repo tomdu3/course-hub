@@ -1,18 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tom's Courses Website</title>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <p class="text-3xl text-center rounded text-red-400">Tom's Courses</p>
-      Tom Courses
-    </h1>
+    <header class="mx-20">
+      <nav class="flex justify-between items-center px-6 py-4">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="logo image" class="w-[100px] h-[50px]" />
+        </div>
+        <ul class="flex space-x-4 text-serif text-black gap-1">
+          <li><a href="#" class="hover:text-gray-600 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1 transition-all duration-200">Home</a></li>
+          <li><a href="#" class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1">About</a></li>
+          <li><a href="#" class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1" >Courses</a></li>
+          <li><a href="#" class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1">Contact</a></li>
+        </ul>
+        <ul class="flex space-x-4 items-center">
+          <li class="relative">
+            <img src="./assets/img/basket.png" alt="Basket" class="w-6 h-6" />
+            <!-- Badge -->
+            <span
+              class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full"
+            >
+              3
+            </span>
+          </li>
+          <li>
+            <img src="./assets/img/profile.png" alt="Profile" class="w-6 h-6" />
+          </li>
+          <li>
+            <img src="./assets/img/search.png" alt="Search" class="w-6 h-6" />
+          </li>
+        </ul>
+        <ul class="flex space-x-4 items-center">
+          <li><a href="#" class="text-gray-600 border border-transparent hover:border hover:border-gray-600 hover:rounded px-4 py-2 transition-all duration-200">Login</a></li>
+          <li>
+            <a
+              href="#"
+              class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200"
+              >SignUp</a
+            >
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
   </body>
 </html>
