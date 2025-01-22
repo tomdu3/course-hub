@@ -5,10 +5,10 @@
     --font-serif: "Righteous", cursive;
 }
 
-.text-sans {
+.font-sans {
     font-family: var(--font-sans);
 }
 
-.text-serif {
+.font-serif {
     font-family: var(--font-serif);
 }
