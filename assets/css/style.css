@@ -8,3 +8,20 @@
 .hero {
     background: linear-gradient(45deg, rgba(74, 22, 189, 0.8) 0%, rgba(4, 1, 108, 0.8) 100%);
   }
+
+  .glow-circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    left: -50px;
+    top: 50px;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.6) 0%, /* Softer white in the center */
+      rgba(255, 255, 255, 0.3) 40%, /* Smooth transition */
+      rgba(255, 255, 255, 0) 80% /* Fully transparent edge */
+    );
+    box-shadow: 0 3px 30px  rgba(128, 128, 128, 0.5); /* Subtle shadow */
+    z-index: -1;
+  }
