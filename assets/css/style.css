@@ -1,14 +1,10 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --font-sans: "Saira", sans-serif;
-    --font-serif: "Righteous", cursive;
+    --customBlue: "#04016C",
+    --customPurple: "#4A16BD",
 }
 
-.font-sans {
-    font-family: var(--font-sans);
-}
 
-.font-serif {
-    font-family: var(--font-serif);
-} */
+.hero {
+    background: linear-gradient(45deg, rgba(74, 22, 189, 0.8) 0%, rgba(4, 1, 108, 0.8) 100%);
+  }
