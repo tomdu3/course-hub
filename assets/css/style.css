@@ -29,7 +29,6 @@
   z-index: -1;
 }
 
-
 .brands {
   background: rgb(92, 7, 198);
   background: linear-gradient(
@@ -40,11 +39,24 @@
 }
 
 .our-courses {
-  background: rgb(115,159,232);
-background: linear-gradient(45deg, rgba(115,159,232,1) 34%, rgba(79,24,202,0.958420868347339) 100%);
+  background: rgb(115, 159, 232);
+  background: linear-gradient(
+    45deg,
+    rgba(115, 159, 232, 1) 34%,
+    rgba(79, 24, 202, 0.958420868347339) 100%
+  );
 }
 
 .light-blue {
-  background: rgb(217,236,255);
-  background: linear-gradient(0deg, rgba(217,236,255,1) 0%, rgba(217,236,255,0.7399334733893557) 100%);
+  background: rgb(217, 236, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 236, 255, 1) 0%,
+    rgba(217, 236, 255, 0.7399334733893557) 100%
+  );
+}
+
+.purple-pink {
+  background: rgb(25,1,248);
+background: linear-gradient(90deg, rgba(25,1,248,0.711922268907563) 45%, rgba(228,65,255,1) 100%);
 }
