@@ -1,221 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tom's Courses Website</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Rowdies&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["Saira", "sans-serif"],
-            serif: ["Righteous", "serif"],
-            mono: ["Rowdies", "monospace"],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom's Courses Website</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Rowdies&display=swap"
+    rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ["Saira", "sans-serif"],
+          serif: ["Righteous", "serif"],
+          mono: ["Rowdies", "monospace"],
+        },
+        extend: {
+          colors: {
+            bgBlue: "#04016C",
+            bgPurple: "#4A16BD",
+            textBlue: "#0E38CD",
+            textPurple: "#4F547B",
           },
-          extend: {
-            colors: {
-              bgBlue: "#04016C",
-              bgPurple: "#4A16BD",
-              textBlue: "#0E38CD",
-              textPurple: "#4F547B",
-            },
-            spacing: {
-              128: "32rem",
-            },
+          spacing: {
+            128: "32rem",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <header class="mx-20">
-      <nav class="flex justify-between items-center px-6 py-4">
-        <div class="logo">
-          <img
-            src="assets/img/logo.png"
-            alt="logo image"
-            class="w-[100px] h-[50px]"
-          />
-        </div>
-        <ul class="flex space-x-4 font-serif text-black gap-1">
-          <li>
-            <a
-              href="#"
-              class="hover:text-gray-600 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1 transition-all duration-200"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1"
-              >Courses</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <ul class="flex space-x-4 items-center">
-          <li class="relative">
-            <img src="./assets/img/basket.png" alt="Basket" class="w-6 h-6" />
-            <!-- Badge -->
-            <span
-              class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full"
-            >
-              3
-            </span>
-          </li>
-          <li>
-            <img src="./assets/img/profile.png" alt="Profile" class="w-6 h-6" />
-          </li>
-          <li>
-            <img src="./assets/img/search.png" alt="Search" class="w-6 h-6" />
-          </li>
-        </ul>
-        <ul class="flex space-x-4 items-center">
-          <li>
-            <a
-              href="#"
-              class="text-gray-600 text-sm border border-transparent hover:border hover:border-gray-600 hover:rounded px-4 py-2 transition-all duration-200"
-              >Login</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200"
-              >SignUp</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero text-white py-16 relative px-32 overflow-hidden">
-        <div class="container mx-auto grid md:grid-cols-2 items-center gap-60">
-          <!-- Text Content -->
-          <div>
-            <p class="uppercase tracking-wide font-serif text-sm mb-4">
-              Successful coaches are visionaries
-            </p>
-            <h1 class="text-4xl md:text-6xl leading-tight font-serif">
-              Good <span class="text-[#0E38CD]">coaching</span> is good teaching
-              & nothing else.
-            </h1>
-            <div class="mt-6 flex space-x-4">
-              <a
-                href="#"
-                class="hover:bg-gray-500 text-white px-6 py-3 rounded-xl font-semibold border border-white"
-                >View Courses</a
-              >
-              <a
-                href="#"
-                class="text-white hover:text-gray-200 px-6 py-3 rounded-xl font-semibold"
-                >Get Free Consultation</a
-              >
-            </div>
-            <div class="mt-5">
-              <div
-                class="flex items-center bg-white text-gray-800 rounded px-4 py-2 w-3/4"
-              >
-                <input
-                  type="text"
-                  placeholder="What do you want to learn today?"
-                  class="flex-1 p-2 outline-none placeholder:text-textPurple"
-                />
-                <button
-                  class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-sm px-3 py-2 rounded hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200"
-                >
-                <i class="fa-solid fa-magnifying-glass pr-4"></i>Search
-                </button>
-              </div>
-            </div>
-          </div>
+      },
+    };
+  </script>
+</head>
 
-          <!-- Image Content -->
-          <div class="mt-10 md:mt-0 bg-opacity-50 flex justify-end z-0">
-            <div class="relative">
-              <img
-                src="./assets/img/woman-laptop.png"
-                alt="Coach"
-                class="z-0"
-              />
-              <div class="glow-circle"></div>
-            </div>
-            <div
-              class="absolute top-40 right-1/4 bg-transparent text-white p-4 rounded max-w-xs flex gap-4"
-            >
-              <div>
-                <div class="flex items-center justify-center">
-                  <div class="h-16 border-l border-blue-500"></div>
-                </div>
-                <div class="flex items-center py-4">
-                  <div class="rounded-full w-8 h-8 bg-blue-500 flex justify-center items-center">
-                    <img class="w-2 h-2" src="./assets/img/stroke.png" alt="stroke icon">
-                  </div>
-                </div>
-                <div class="flex items-center justify-center">
-                  <div class="h-16 border-l border-blue-500"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="text-l font-bold mb-2">Shyam</h3>
-                <p
-                  class="text-m text-left leading-[1.5] tracking-wide font-semibold flex flex-col gap-2"
-                >
-                  In a coaching role, you ask the questions and rely more on
-                  your staff, who become the experts, to provide the
-                  information.
-                  <br />
-                  <span class="text-blue-400">4.9</span>
-                </p>
-              </div>
+<body>
+  <header class="mx-20">
+    <nav class="flex justify-between items-center px-6 py-4">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="logo image" class="w-[100px] h-[50px]" />
+      </div>
+      <ul class="flex space-x-4 font-serif text-black gap-1">
+        <li>
+          <a href="#"
+            class="hover:text-gray-600 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1 transition-all duration-200">Home</a>
+        </li>
+        <li>
+          <a href="#"
+            class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1">About</a>
+        </li>
+        <li>
+          <a href="#"
+            class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1">Courses</a>
+        </li>
+        <li>
+          <a href="#"
+            class="hover:text-black-500 border border-transparent active:border active:border-blue-500 active:rounded px-2 px-1">Contact</a>
+        </li>
+      </ul>
+      <ul class="flex space-x-4 items-center">
+        <li class="relative">
+          <img src="./assets/img/basket.png" alt="Basket" class="w-6 h-6" />
+          <!-- Badge -->
+          <span class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">
+            3
+          </span>
+        </li>
+        <li>
+          <img src="./assets/img/profile.png" alt="Profile" class="w-6 h-6" />
+        </li>
+        <li>
+          <img src="./assets/img/search.png" alt="Search" class="w-6 h-6" />
+        </li>
+      </ul>
+      <ul class="flex space-x-4 items-center">
+        <li>
+          <a href="#"
+            class="text-gray-600 text-sm border border-transparent hover:border hover:border-gray-600 hover:rounded px-4 py-2 transition-all duration-200">Login</a>
+        </li>
+        <li>
+          <a href="#"
+            class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200">SignUp</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero text-white py-16 relative px-32 overflow-hidden">
+      <div class="container mx-auto grid md:grid-cols-2 items-center gap-60">
+        <!-- Text Content -->
+        <div>
+          <p class="uppercase tracking-wide font-serif text-sm mb-4">
+            Successful coaches are visionaries
+          </p>
+          <h1 class="text-4xl md:text-6xl leading-tight font-serif">
+            Good <span class="text-[#0E38CD]">coaching</span> is good teaching
+            & nothing else.
+          </h1>
+          <div class="mt-6 flex space-x-4">
+            <a href="#" class="hover:bg-gray-500 text-white px-6 py-3 rounded-xl font-semibold border border-white">View
+              Courses</a>
+            <a href="#" class="text-white hover:text-gray-200 px-6 py-3 rounded-xl font-semibold">Get Free
+              Consultation</a>
+          </div>
+          <div class="mt-5">
+            <div class="flex items-center bg-white text-gray-800 rounded px-4 py-2 w-3/4">
+              <input type="text" placeholder="What do you want to learn today?"
+                class="flex-1 p-2 outline-none placeholder:text-textPurple" />
+              <button
+                class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-sm px-3 py-2 rounded hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200">
+                <i class="fa-solid fa-magnifying-glass pr-4"></i>Search
+              </button>
             </div>
           </div>
         </div>
-        <!-- Arch image -->
-        <svg class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2" width="313" height="359" viewBox="0 0 313 359" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.3" d="M45.5 153.5C45.5 92.1964 95.1964 42.5 156.5 42.5C217.804 42.5 267.5 92.1964 267.5 153.5L267.5 357.5L45.4999 357.5L45.5 153.5Z" stroke="white" stroke-width="3"/>
-          <path opacity="0.3" d="M1.49997 156.5C1.49999 70.8959 70.8959 1.50001 156.5 1.50003C242.104 1.50004 311.5 70.8959 311.5 156.5L311.5 357.5L1.49994 357.5L1.49997 156.5Z" stroke="white" stroke-width="3"/>
-          <path opacity="0.3" d="M290.5 159.031L292 159.031L292 164.094L290.5 164.094L290.5 169.156L292 169.156L292 174.219L290.5 174.219L290.5 179.281L292 179.281L292 184.344L290.5 184.344L290.5 189.406L292 189.406L292 194.469L290.5 194.469L290.5 199.531L292 199.531L292 204.594L290.5 204.594L290.5 209.656L292 209.656L292 214.719L290.5 214.719L290.5 219.781L292 219.781L292 224.844L290.5 224.844L290.5 229.906L292 229.906L292 234.969L290.5 234.969L290.5 240.031L292 240.031L292 245.094L290.5 245.094L290.5 250.156L292 250.156L292 255.219L290.5 255.219L290.5 260.281L292 260.281L292 265.344L290.5 265.344L290.5 270.406L292 270.406L292 275.469L290.5 275.469L290.5 280.531L292 280.531L292 285.594L290.5 285.594L290.5 290.656L292 290.656L292 295.719L290.5 295.719L290.5 300.781L292 300.781L292 305.844L290.5 305.844L290.5 310.906L292 310.906L292 315.969L290.5 315.969L290.5 321.031L292 321.031L292 326.094L290.5 326.094L290.5 331.156L292 331.156L292 336.219L290.5 336.219L290.5 341.281L292 341.281L292 346.344L290.5 346.344L290.5 351.406L292 351.406L292 356.469L290.5 356.469L290.5 357.5L289.491 357.5L289.491 359L284.472 359L284.472 357.5L279.454 357.5L279.454 359L274.435 359L274.435 357.5L269.417 357.5L269.417 359L264.398 359L264.398 357.5L259.38 357.5L259.38 359L254.361 359L254.361 357.5L249.343 357.5L249.343 359L244.324 359L244.324 357.5L239.306 357.5L239.306 359L234.287 359L234.287 357.5L229.269 357.5L229.269 359L224.25 359L224.25 357.5L219.231 357.5L219.231 359L214.213 359L214.213 357.5L209.194 357.5L209.194 359L204.176 359L204.176 357.5L199.157 357.5L199.157 359L194.139 359L194.139 357.5L189.12 357.5L189.12 359L184.102 359L184.102 357.5L179.083 357.5L179.083 359L174.065 359L174.065 357.5L169.046 357.5L169.046 359L164.028 359L164.028 357.5L159.009 357.5L159.009 359L153.991 359L153.991 357.5L148.972 357.5L148.972 359L143.954 359L143.954 357.5L138.935 357.5L138.935 359L133.917 359L133.917 357.5L128.898 357.5L128.898 359L123.88 359L123.88 357.5L118.861 357.5L118.861 359L113.843 359L113.843 357.5L108.824 357.5L108.824 359L103.806 359L103.806 357.5L98.787 357.5L98.787 359L93.7685 359L93.7685 357.5L88.75 357.5L88.75 359L83.7314 359L83.7314 357.5L78.7129 357.5L78.7129 359L73.6944 359L73.6944 357.5L68.6759 357.5L68.6759 359L63.6574 359L63.6574 357.5L58.6388 357.5L58.6388 359L53.6203 359L53.6203 357.5L48.6018 357.5L48.6018 359L43.5833 359L43.5833 357.5L38.5648 357.5L38.5648 359L33.5462 359L33.5462 357.5L28.5277 357.5L28.5277 359L23.5092 359L23.5092 357.5L22.4999 357.5L22.4999 356.469L20.9999 356.469L20.9999 351.406L22.4999 351.406L22.4999 346.344L20.9999 346.344L20.9999 341.281L22.4999 341.281L22.4999 336.219L20.9999 336.219L20.9999 331.156L22.4999 331.156L22.4999 326.094L20.9999 326.094L20.9999 321.031L22.4999 321.031L22.4999 315.969L20.9999 315.969L20.9999 310.906L22.4999 310.906L22.5 305.844L21 305.844L21 300.781L22.5 300.781L22.5 295.719L21 295.719L21 290.656L22.5 290.656L22.5 285.594L21 285.594L21 280.531L22.5 280.531L22.5 275.469L21 275.469L21 270.406L22.5 270.406L22.5 265.344L21 265.344L21 260.281L22.5 260.281L22.5 255.219L21 255.219L21 250.156L22.5 250.156L22.5 245.094L21 245.094L21 240.031L22.5 240.031L22.5 234.969L21 234.969L21 229.906L22.5 229.906L22.5 224.844L21 224.844L21 219.781L22.5 219.781L22.5 214.719L21 214.719L21 209.656L22.5 209.656L22.5 204.594L21 204.594L21 199.531L22.5 199.531L22.5 194.469L21 194.469L21 189.406L22.5 189.406L22.5 184.344L21 184.344L21 179.281L22.5 179.281L22.5 174.219L21 174.219L21 169.156L22.5 169.156L22.5 164.094L21 164.094L21 159.031L22.5 159.031L22.5 156.5C22.5 155.66 22.5077 154.821 22.5231 153.984L21.0234 153.957C21.0545 152.263 21.1168 150.576 21.2096 148.898L22.7073 148.981C22.8 147.306 22.9234 145.639 23.077 143.98L21.5834 143.842C21.7399 142.153 21.9274 140.473 22.1453 138.802L23.6327 138.996C23.8494 137.335 24.0966 135.683 24.3736 134.041L22.8945 133.792C23.1762 132.122 23.4884 130.463 23.8305 128.815L25.2992 129.12C25.6399 127.479 26.0105 125.849 26.4106 124.231L24.9544 123.871C25.361 122.227 25.7976 120.594 26.2636 118.974L27.7052 119.388C28.1679 117.779 28.6599 116.183 29.1807 114.6L27.7558 114.131C28.2844 112.524 28.8423 110.93 29.4288 109.35L30.835 109.872C31.4175 108.303 32.0285 106.748 32.6674 105.207L31.2818 104.632C31.9301 103.069 32.6069 101.52 33.3114 99.987L34.6744 100.613C35.3728 99.0933 36.0989 97.5886 36.852 96.0998L35.5134 95.4228C36.2767 93.9138 37.0674 92.421 37.8848 90.9451L39.197 91.6719C40.0072 90.2091 40.8439 88.7631 41.7066 87.3344L40.4225 86.5591C41.2967 85.1113 42.1972 83.6813 43.1234 82.2696L44.3775 83.0924C45.2947 81.6944 46.2372 80.3147 47.2046 78.9537L45.982 78.0847C46.9612 76.7071 47.9656 75.3485 48.9944 74.0097L50.1838 74.9237C51.2022 73.5985 52.2448 72.2928 53.311 71.0074L52.1564 70.0498C53.2353 68.749 54.3381 67.4688 55.464 66.2097L56.5822 67.2096C57.6961 65.9639 58.833 64.7392 59.9922 63.5362L58.912 62.4954C60.0842 61.2788 61.2789 60.0841 62.4954 58.9119L63.5362 59.9921C64.7393 58.833 65.964 57.6961 67.2096 56.5821L66.2097 55.464C67.4688 54.3381 68.7491 53.2353 70.0499 52.1564L71.0075 53.3109C72.2929 52.2447 73.5985 51.2021 74.9238 50.1838L74.0098 48.9944C75.3486 47.9656 76.7071 46.9612 78.0848 45.982L78.9538 47.2046C80.3147 46.2372 81.6945 45.2947 83.0924 44.3775L82.2696 43.1233C83.6813 42.1972 85.1114 41.2967 86.5591 40.4225L87.3345 41.7066C88.7631 40.8439 90.2092 40.0072 91.672 39.197L90.9452 37.8848C92.4211 37.0674 93.9139 36.2767 95.4228 35.5134L96.0999 36.852C97.5887 36.0989 99.0934 35.3728 100.613 34.6744L99.9871 33.3114C101.52 32.6069 103.069 31.9301 104.632 31.2818L105.207 32.6674C106.748 32.0285 108.303 31.4175 109.872 30.835L109.35 29.4288C110.93 28.8423 112.524 28.2844 114.131 27.7558L114.6 29.1807C116.183 28.6599 117.78 28.1679 119.388 27.7052L118.974 26.2637C120.594 25.7976 122.227 25.361 123.871 24.9545L124.231 26.4106C125.849 26.0105 127.479 25.6399 129.12 25.2992L128.815 23.8305C130.463 23.4884 132.122 23.1762 133.792 22.8945L134.041 24.3736C135.683 24.0966 137.335 23.8494 138.996 23.6327L138.802 22.1453C140.473 21.9274 142.153 21.7399 143.842 21.5835L143.98 23.0771C145.639 22.9234 147.306 22.8 148.981 22.7074L148.898 21.2097C150.577 21.1169 152.263 21.0546 153.957 21.0234L153.984 22.5232C154.821 22.5078 155.66 22.5 156.5 22.5C157.34 22.5 158.179 22.5078 159.016 22.5232L159.043 21.0234C160.737 21.0546 162.424 21.1169 164.102 21.2097L164.019 22.7074C165.694 22.8 167.362 22.9235 169.02 23.0771L169.158 21.5835C170.847 21.74 172.527 21.9274 174.198 22.1453L174.004 23.6327C175.665 23.8495 177.317 24.0966 178.959 24.3736L179.208 22.8945C180.878 23.1762 182.537 23.4884 184.185 23.8306L183.88 25.2992C185.521 25.6399 187.151 26.0106 188.769 26.4107L189.129 24.9545C190.774 25.3611 192.406 25.7977 194.027 26.2637L193.612 27.7053C195.221 28.168 196.817 28.66 198.4 29.1807L198.869 27.7558C200.476 28.2844 202.07 28.8423 203.65 29.4288L203.128 30.8351C204.697 31.4175 206.253 32.0285 207.793 32.6675L208.368 31.2819C209.931 31.9302 211.48 32.6069 213.013 33.3114L212.387 34.6744C213.907 35.3729 215.411 36.0989 216.9 36.852L217.577 35.5135C219.086 36.2768 220.579 37.0674 222.055 37.8849L221.328 39.1971C222.791 40.0072 224.237 40.844 225.666 41.7066L226.441 40.4226C227.889 41.2967 229.319 42.1972 230.73 43.1234L229.908 44.3776C231.306 45.2947 232.685 46.2373 234.046 47.2046L234.915 45.982C236.293 46.9613 237.652 47.9656 238.99 48.9944L238.076 50.1838C239.402 51.2022 240.707 52.2448 241.993 53.311L242.95 52.1564C244.251 53.2353 245.531 54.3381 246.79 55.4641L245.79 56.5822C247.036 57.6961 248.261 58.833 249.464 59.9922L250.505 58.912C251.721 60.0842 252.916 61.2789 254.088 62.4955L253.008 63.5362C254.167 64.7393 255.304 65.964 256.418 67.2096L257.536 66.2098C258.662 67.4688 259.765 68.7491 260.844 70.0499L259.689 71.0075C260.755 72.2929 261.798 73.5986 262.816 74.9238L264.006 74.0098C265.034 75.3486 266.039 76.7071 267.018 78.0848L265.795 78.9538C266.763 80.3147 267.705 81.6945 268.623 83.0924L269.877 82.2696C270.803 83.6813 271.703 85.1114 272.578 86.5591L271.293 87.3345C272.156 88.7631 272.993 90.2092 273.803 91.672L275.115 90.9452C275.933 92.4211 276.723 93.9139 277.487 95.4229L276.148 96.0999C276.901 97.5887 277.627 99.0934 278.326 100.613L279.689 99.9871C280.393 101.52 281.07 103.069 281.718 104.632L280.333 105.207C280.972 106.748 281.583 108.303 282.165 109.872L283.571 109.35C284.158 110.93 284.716 112.524 285.244 114.131L283.819 114.6C284.34 116.183 284.832 117.78 285.295 119.388L286.736 118.974C287.202 120.594 287.639 122.227 288.046 123.871L286.589 124.231C286.99 125.849 287.36 127.479 287.701 129.12L289.17 128.815C289.512 130.463 289.824 132.122 290.106 133.792L288.626 134.041C288.903 135.683 289.151 137.335 289.367 138.997L290.855 138.802C291.073 140.473 291.26 142.153 291.417 143.842L289.923 143.98C290.077 145.639 290.2 147.306 290.293 148.981L291.79 148.898C291.883 150.577 291.945 152.263 291.977 153.957L290.477 153.984C290.492 154.821 290.5 155.66 290.5 156.5L290.5 159.031Z" stroke="white" stroke-width="3" stroke-dasharray="5 5"/>
-          </svg>
-          
-      </section>
-      <!-- Brands -->
-      <div
-      class="brands flex justify-center space-x-40 bottom-4 border-t border-gray-200 py-10"
-    >
+
+        <!-- Image Content -->
+        <div class="mt-10 md:mt-0 bg-opacity-50 flex justify-end z-0">
+          <div class="relative">
+            <img src="./assets/img/woman-laptop.png" alt="Coach" class="z-0" />
+            <div class="glow-circle"></div>
+          </div>
+          <div class="absolute top-40 right-1/4 bg-transparent text-white p-4 rounded max-w-xs flex gap-4">
+            <div>
+              <div class="flex items-center justify-center">
+                <div class="h-16 border-l border-blue-500"></div>
+              </div>
+              <div class="flex items-center py-4">
+                <div class="rounded-full w-8 h-8 bg-blue-500 flex justify-center items-center">
+                  <img class="w-2 h-2" src="./assets/img/stroke.png" alt="stroke icon">
+                </div>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="h-16 border-l border-blue-500"></div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-l font-bold mb-2">Shyam</h3>
+              <p class="text-m text-left leading-[1.5] tracking-wide font-semibold flex flex-col gap-2">
+                In a coaching role, you ask the questions and rely more on
+                your staff, who become the experts, to provide the
+                information.
+                <br />
+                <span class="text-blue-400">4.9</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Arch image -->
+      <svg class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2" width="313" height="359"
+        viewBox="0 0 313 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.3"
+          d="M45.5 153.5C45.5 92.1964 95.1964 42.5 156.5 42.5C217.804 42.5 267.5 92.1964 267.5 153.5L267.5 357.5L45.4999 357.5L45.5 153.5Z"
+          stroke="white" stroke-width="3" />
+        <path opacity="0.3"
+          d="M1.49997 156.5C1.49999 70.8959 70.8959 1.50001 156.5 1.50003C242.104 1.50004 311.5 70.8959 311.5 156.5L311.5 357.5L1.49994 357.5L1.49997 156.5Z"
+          stroke="white" stroke-width="3" />
+        <path opacity="0.3"
+          d="M290.5 159.031L292 159.031L292 164.094L290.5 164.094L290.5 169.156L292 169.156L292 174.219L290.5 174.219L290.5 179.281L292 179.281L292 184.344L290.5 184.344L290.5 189.406L292 189.406L292 194.469L290.5 194.469L290.5 199.531L292 199.531L292 204.594L290.5 204.594L290.5 209.656L292 209.656L292 214.719L290.5 214.719L290.5 219.781L292 219.781L292 224.844L290.5 224.844L290.5 229.906L292 229.906L292 234.969L290.5 234.969L290.5 240.031L292 240.031L292 245.094L290.5 245.094L290.5 250.156L292 250.156L292 255.219L290.5 255.219L290.5 260.281L292 260.281L292 265.344L290.5 265.344L290.5 270.406L292 270.406L292 275.469L290.5 275.469L290.5 280.531L292 280.531L292 285.594L290.5 285.594L290.5 290.656L292 290.656L292 295.719L290.5 295.719L290.5 300.781L292 300.781L292 305.844L290.5 305.844L290.5 310.906L292 310.906L292 315.969L290.5 315.969L290.5 321.031L292 321.031L292 326.094L290.5 326.094L290.5 331.156L292 331.156L292 336.219L290.5 336.219L290.5 341.281L292 341.281L292 346.344L290.5 346.344L290.5 351.406L292 351.406L292 356.469L290.5 356.469L290.5 357.5L289.491 357.5L289.491 359L284.472 359L284.472 357.5L279.454 357.5L279.454 359L274.435 359L274.435 357.5L269.417 357.5L269.417 359L264.398 359L264.398 357.5L259.38 357.5L259.38 359L254.361 359L254.361 357.5L249.343 357.5L249.343 359L244.324 359L244.324 357.5L239.306 357.5L239.306 359L234.287 359L234.287 357.5L229.269 357.5L229.269 359L224.25 359L224.25 357.5L219.231 357.5L219.231 359L214.213 359L214.213 357.5L209.194 357.5L209.194 359L204.176 359L204.176 357.5L199.157 357.5L199.157 359L194.139 359L194.139 357.5L189.12 357.5L189.12 359L184.102 359L184.102 357.5L179.083 357.5L179.083 359L174.065 359L174.065 357.5L169.046 357.5L169.046 359L164.028 359L164.028 357.5L159.009 357.5L159.009 359L153.991 359L153.991 357.5L148.972 357.5L148.972 359L143.954 359L143.954 357.5L138.935 357.5L138.935 359L133.917 359L133.917 357.5L128.898 357.5L128.898 359L123.88 359L123.88 357.5L118.861 357.5L118.861 359L113.843 359L113.843 357.5L108.824 357.5L108.824 359L103.806 359L103.806 357.5L98.787 357.5L98.787 359L93.7685 359L93.7685 357.5L88.75 357.5L88.75 359L83.7314 359L83.7314 357.5L78.7129 357.5L78.7129 359L73.6944 359L73.6944 357.5L68.6759 357.5L68.6759 359L63.6574 359L63.6574 357.5L58.6388 357.5L58.6388 359L53.6203 359L53.6203 357.5L48.6018 357.5L48.6018 359L43.5833 359L43.5833 357.5L38.5648 357.5L38.5648 359L33.5462 359L33.5462 357.5L28.5277 357.5L28.5277 359L23.5092 359L23.5092 357.5L22.4999 357.5L22.4999 356.469L20.9999 356.469L20.9999 351.406L22.4999 351.406L22.4999 346.344L20.9999 346.344L20.9999 341.281L22.4999 341.281L22.4999 336.219L20.9999 336.219L20.9999 331.156L22.4999 331.156L22.4999 326.094L20.9999 326.094L20.9999 321.031L22.4999 321.031L22.4999 315.969L20.9999 315.969L20.9999 310.906L22.4999 310.906L22.5 305.844L21 305.844L21 300.781L22.5 300.781L22.5 295.719L21 295.719L21 290.656L22.5 290.656L22.5 285.594L21 285.594L21 280.531L22.5 280.531L22.5 275.469L21 275.469L21 270.406L22.5 270.406L22.5 265.344L21 265.344L21 260.281L22.5 260.281L22.5 255.219L21 255.219L21 250.156L22.5 250.156L22.5 245.094L21 245.094L21 240.031L22.5 240.031L22.5 234.969L21 234.969L21 229.906L22.5 229.906L22.5 224.844L21 224.844L21 219.781L22.5 219.781L22.5 214.719L21 214.719L21 209.656L22.5 209.656L22.5 204.594L21 204.594L21 199.531L22.5 199.531L22.5 194.469L21 194.469L21 189.406L22.5 189.406L22.5 184.344L21 184.344L21 179.281L22.5 179.281L22.5 174.219L21 174.219L21 169.156L22.5 169.156L22.5 164.094L21 164.094L21 159.031L22.5 159.031L22.5 156.5C22.5 155.66 22.5077 154.821 22.5231 153.984L21.0234 153.957C21.0545 152.263 21.1168 150.576 21.2096 148.898L22.7073 148.981C22.8 147.306 22.9234 145.639 23.077 143.98L21.5834 143.842C21.7399 142.153 21.9274 140.473 22.1453 138.802L23.6327 138.996C23.8494 137.335 24.0966 135.683 24.3736 134.041L22.8945 133.792C23.1762 132.122 23.4884 130.463 23.8305 128.815L25.2992 129.12C25.6399 127.479 26.0105 125.849 26.4106 124.231L24.9544 123.871C25.361 122.227 25.7976 120.594 26.2636 118.974L27.7052 119.388C28.1679 117.779 28.6599 116.183 29.1807 114.6L27.7558 114.131C28.2844 112.524 28.8423 110.93 29.4288 109.35L30.835 109.872C31.4175 108.303 32.0285 106.748 32.6674 105.207L31.2818 104.632C31.9301 103.069 32.6069 101.52 33.3114 99.987L34.6744 100.613C35.3728 99.0933 36.0989 97.5886 36.852 96.0998L35.5134 95.4228C36.2767 93.9138 37.0674 92.421 37.8848 90.9451L39.197 91.6719C40.0072 90.2091 40.8439 88.7631 41.7066 87.3344L40.4225 86.5591C41.2967 85.1113 42.1972 83.6813 43.1234 82.2696L44.3775 83.0924C45.2947 81.6944 46.2372 80.3147 47.2046 78.9537L45.982 78.0847C46.9612 76.7071 47.9656 75.3485 48.9944 74.0097L50.1838 74.9237C51.2022 73.5985 52.2448 72.2928 53.311 71.0074L52.1564 70.0498C53.2353 68.749 54.3381 67.4688 55.464 66.2097L56.5822 67.2096C57.6961 65.9639 58.833 64.7392 59.9922 63.5362L58.912 62.4954C60.0842 61.2788 61.2789 60.0841 62.4954 58.9119L63.5362 59.9921C64.7393 58.833 65.964 57.6961 67.2096 56.5821L66.2097 55.464C67.4688 54.3381 68.7491 53.2353 70.0499 52.1564L71.0075 53.3109C72.2929 52.2447 73.5985 51.2021 74.9238 50.1838L74.0098 48.9944C75.3486 47.9656 76.7071 46.9612 78.0848 45.982L78.9538 47.2046C80.3147 46.2372 81.6945 45.2947 83.0924 44.3775L82.2696 43.1233C83.6813 42.1972 85.1114 41.2967 86.5591 40.4225L87.3345 41.7066C88.7631 40.8439 90.2092 40.0072 91.672 39.197L90.9452 37.8848C92.4211 37.0674 93.9139 36.2767 95.4228 35.5134L96.0999 36.852C97.5887 36.0989 99.0934 35.3728 100.613 34.6744L99.9871 33.3114C101.52 32.6069 103.069 31.9301 104.632 31.2818L105.207 32.6674C106.748 32.0285 108.303 31.4175 109.872 30.835L109.35 29.4288C110.93 28.8423 112.524 28.2844 114.131 27.7558L114.6 29.1807C116.183 28.6599 117.78 28.1679 119.388 27.7052L118.974 26.2637C120.594 25.7976 122.227 25.361 123.871 24.9545L124.231 26.4106C125.849 26.0105 127.479 25.6399 129.12 25.2992L128.815 23.8305C130.463 23.4884 132.122 23.1762 133.792 22.8945L134.041 24.3736C135.683 24.0966 137.335 23.8494 138.996 23.6327L138.802 22.1453C140.473 21.9274 142.153 21.7399 143.842 21.5835L143.98 23.0771C145.639 22.9234 147.306 22.8 148.981 22.7074L148.898 21.2097C150.577 21.1169 152.263 21.0546 153.957 21.0234L153.984 22.5232C154.821 22.5078 155.66 22.5 156.5 22.5C157.34 22.5 158.179 22.5078 159.016 22.5232L159.043 21.0234C160.737 21.0546 162.424 21.1169 164.102 21.2097L164.019 22.7074C165.694 22.8 167.362 22.9235 169.02 23.0771L169.158 21.5835C170.847 21.74 172.527 21.9274 174.198 22.1453L174.004 23.6327C175.665 23.8495 177.317 24.0966 178.959 24.3736L179.208 22.8945C180.878 23.1762 182.537 23.4884 184.185 23.8306L183.88 25.2992C185.521 25.6399 187.151 26.0106 188.769 26.4107L189.129 24.9545C190.774 25.3611 192.406 25.7977 194.027 26.2637L193.612 27.7053C195.221 28.168 196.817 28.66 198.4 29.1807L198.869 27.7558C200.476 28.2844 202.07 28.8423 203.65 29.4288L203.128 30.8351C204.697 31.4175 206.253 32.0285 207.793 32.6675L208.368 31.2819C209.931 31.9302 211.48 32.6069 213.013 33.3114L212.387 34.6744C213.907 35.3729 215.411 36.0989 216.9 36.852L217.577 35.5135C219.086 36.2768 220.579 37.0674 222.055 37.8849L221.328 39.1971C222.791 40.0072 224.237 40.844 225.666 41.7066L226.441 40.4226C227.889 41.2967 229.319 42.1972 230.73 43.1234L229.908 44.3776C231.306 45.2947 232.685 46.2373 234.046 47.2046L234.915 45.982C236.293 46.9613 237.652 47.9656 238.99 48.9944L238.076 50.1838C239.402 51.2022 240.707 52.2448 241.993 53.311L242.95 52.1564C244.251 53.2353 245.531 54.3381 246.79 55.4641L245.79 56.5822C247.036 57.6961 248.261 58.833 249.464 59.9922L250.505 58.912C251.721 60.0842 252.916 61.2789 254.088 62.4955L253.008 63.5362C254.167 64.7393 255.304 65.964 256.418 67.2096L257.536 66.2098C258.662 67.4688 259.765 68.7491 260.844 70.0499L259.689 71.0075C260.755 72.2929 261.798 73.5986 262.816 74.9238L264.006 74.0098C265.034 75.3486 266.039 76.7071 267.018 78.0848L265.795 78.9538C266.763 80.3147 267.705 81.6945 268.623 83.0924L269.877 82.2696C270.803 83.6813 271.703 85.1114 272.578 86.5591L271.293 87.3345C272.156 88.7631 272.993 90.2092 273.803 91.672L275.115 90.9452C275.933 92.4211 276.723 93.9139 277.487 95.4229L276.148 96.0999C276.901 97.5887 277.627 99.0934 278.326 100.613L279.689 99.9871C280.393 101.52 281.07 103.069 281.718 104.632L280.333 105.207C280.972 106.748 281.583 108.303 282.165 109.872L283.571 109.35C284.158 110.93 284.716 112.524 285.244 114.131L283.819 114.6C284.34 116.183 284.832 117.78 285.295 119.388L286.736 118.974C287.202 120.594 287.639 122.227 288.046 123.871L286.589 124.231C286.99 125.849 287.36 127.479 287.701 129.12L289.17 128.815C289.512 130.463 289.824 132.122 290.106 133.792L288.626 134.041C288.903 135.683 289.151 137.335 289.367 138.997L290.855 138.802C291.073 140.473 291.26 142.153 291.417 143.842L289.923 143.98C290.077 145.639 290.2 147.306 290.293 148.981L291.79 148.898C291.883 150.577 291.945 152.263 291.977 153.957L290.477 153.984C290.492 154.821 290.5 155.66 290.5 156.5L290.5 159.031Z"
+          stroke="white" stroke-width="3" stroke-dasharray="5 5" />
+      </svg>
+
+    </section>
+    <!-- Brands -->
+    <div class="brands flex justify-center space-x-40 bottom-4 border-t border-gray-200 py-10">
       <img src="./assets/img/spotify.png" alt="Spotify" class="h-8" />
       <img src="./assets/img/amazon.png" alt="Amazon" class="h-8" />
       <img src="./assets/img/spotify.png" alt="Spotify" class="h-8" />
@@ -236,12 +198,13 @@
             The feature courses are we invented our teaching part
           </p>
         </div>
-    
+
         <!-- Courses Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <!-- Course Card -->
           <div class="bg-white shadow-lg rounded-lg">
-            <img src="./assets/img/motion-graphics.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
+            <img src="./assets/img/motion-graphics.png" alt="Course Image"
+              class="w-full h-65 object-cover rounded-t-md">
             <div class="px-6 py-4">
               <p class="text-gray-600 text-sm mb-2 flex justify-between">
                 <span>1,957 Students</span>
@@ -254,7 +217,7 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Repeat for other courses -->
           <div class="bg-white shadow-lg rounded-lg">
             <img src="./assets/img/advance-php.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
@@ -270,7 +233,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="bg-white shadow-lg rounded-lg">
             <img src="./assets/img/education-php.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
             <div class="px-6 py-4">
@@ -285,9 +248,10 @@
               </div>
             </div>
           </div>
-    
+
           <div class="bg-white shadow-lg rounded-lg">
-            <img src="./assets/img/complete-finance.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
+            <img src="./assets/img/complete-finance.png" alt="Course Image"
+              class="w-full h-65 object-cover rounded-t-md">
             <div class="px-6 py-4">
               <p class="text-gray-600 text-sm mb-2 flex justify-between">
                 <span>5,457 Students</span>
@@ -300,7 +264,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="bg-white shadow-lg rounded-lg">
             <img src="./assets/img/marketing.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
             <div class="px-6 py-4">
@@ -315,7 +279,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="bg-white shadow-lg rounded-lg">
             <img src="./assets/img/learn-3d.png" alt="Course Image" class="w-full h-65 object-cover rounded-t-md">
             <div class="px-6 py-4">
@@ -331,19 +295,77 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Explore Button -->
         <div class="text-center mt-12 py-10">
-          <a
-            href="#"
-            class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-2xl  px-6 py-3 rounded-xl hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200"
-          >
+          <a href="#"
+            class="bg-gradient-to-r from-blue-700 to-purple-600 text-white text-2xl  px-6 py-3 rounded-xl hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-500 transition-all duration-200">
             Explore courses
           </a>
         </div>
       </div>
     </section>
-    
-    </main>
-  </body>
+
+    <!-- About Our Courses -->
+    <section class="our-courses pt-20 pb-40 text-white font-serif relative">
+
+      <!-- Arch Image -->
+      <svg class="absolute top-30" width="208" height="313" viewBox="0 0 208 313" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.2"
+          d="M54.5 45.5C115.804 45.5 165.5 95.1964 165.5 156.5C165.5 217.804 115.804 267.5 54.5 267.5L-149.5 267.5L-149.5 45.4999L54.5 45.5Z"
+          stroke="white" stroke-width="3" />
+        <path opacity="0.2"
+          d="M51.5 1.49997C137.104 1.49998 206.5 70.8959 206.5 156.5C206.5 242.104 137.104 311.5 51.4999 311.5L-149.5 311.5L-149.5 1.49992L51.5 1.49997Z"
+          stroke="white" stroke-width="3" />
+        <path opacity="0.2"
+          d="M48.5221 290.5L48.5221 292L42.5662 292L42.5662 290.5L36.6103 290.5L36.6103 292L30.6544 292L30.6544 290.5L24.6985 290.5L24.6985 292L18.7426 292L18.7426 290.5L12.7867 290.5L12.7867 292L6.83086 292L6.83086 290.5L0.874972 290.5L0.874971 292L-5.08092 292L-5.08092 290.5L-11.0368 290.5L-11.0368 292L-16.9927 292L-16.9927 290.5L-22.9486 290.5L-22.9486 292L-28.9045 292L-28.9045 290.5L-34.8603 290.5L-34.8603 292L-40.8162 292L-40.8162 290.5L-46.7721 290.5L-46.7721 292L-52.728 292L-52.728 290.5L-58.6839 290.5L-58.6839 292L-64.6397 292L-64.6397 290.5L-70.5956 290.5L-70.5956 292L-76.5515 292L-76.5515 290.5L-82.5074 290.5L-82.5074 292L-88.4633 292L-88.4633 290.5L-94.4191 290.5L-94.4191 292L-100.375 292L-100.375 290.5L-106.331 290.5L-106.331 292L-112.287 292L-112.287 290.5L-118.243 290.5L-118.243 292L-124.199 292L-124.199 290.5L-130.154 290.5L-130.154 292L-136.11 292L-136.11 290.5L-142.066 290.5L-142.066 292L-148.022 292L-148.022 290.5L-149.5 290.5L-149.5 289.054L-151 289.054L-151 283.163L-149.5 283.163L-149.5 277.272L-151 277.272L-151 271.38L-149.5 271.38L-149.5 265.489L-151 265.489L-151 259.598L-149.5 259.598L-149.5 253.707L-151 253.707L-151 247.815L-149.5 247.815L-149.5 241.924L-151 241.924L-151 236.033L-149.5 236.033L-149.5 230.141L-151 230.141L-151 224.25L-149.5 224.25L-149.5 218.359L-151 218.359L-151 212.467L-149.5 212.467L-149.5 206.576L-151 206.576L-151 200.685L-149.5 200.685L-149.5 194.793L-151 194.793L-151 188.902L-149.5 188.902L-149.5 183.011L-151 183.011L-151 177.12L-149.5 177.12L-149.5 171.228L-151 171.228L-151 165.337L-149.5 165.337L-149.5 159.446L-151 159.446L-151 153.554L-149.5 153.554L-149.5 147.663L-151 147.663L-151 141.772L-149.5 141.772L-149.5 135.88L-151 135.88L-151 129.989L-149.5 129.989L-149.5 124.098L-151 124.098L-151 118.206L-149.5 118.206L-149.5 112.315L-151 112.315L-151 106.424L-149.5 106.424L-149.5 100.533L-151 100.533L-151 94.6412L-149.5 94.6412L-149.5 88.7499L-151 88.7499L-151 82.8586L-149.5 82.8586L-149.5 76.9673L-151 76.9673L-151 71.076L-149.5 71.076L-149.5 65.1847L-151 65.1847L-151 59.2934L-149.5 59.2934L-149.5 53.4021L-151 53.4021L-151 47.5108L-149.5 47.5108L-149.5 41.6195L-151 41.6195L-151 35.7282L-149.5 35.7282L-149.5 29.8369L-151 29.8369L-151 23.9456L-149.5 23.9456L-149.5 22.4999L-148.022 22.4999L-148.022 20.9999L-142.066 20.9999L-142.066 22.4999L-136.11 22.4999L-136.11 20.9999L-130.154 20.9999L-130.154 22.4999L-124.199 22.4999L-124.199 20.9999L-118.243 20.9999L-118.243 22.4999L-112.287 22.4999L-112.287 20.9999L-106.331 20.9999L-106.331 22.4999L-100.375 22.4999L-100.375 20.9999L-94.4191 20.9999L-94.4191 22.4999L-88.4632 22.4999L-88.4632 20.9999L-82.5073 20.9999L-82.5073 22.4999L-76.5514 22.4999L-76.5514 20.9999L-70.5955 20.9999L-70.5955 22.4999L-64.6397 22.4999L-64.6397 20.9999L-58.6838 20.9999L-58.6838 22.4999L-52.7279 22.4999L-52.7279 20.9999L-46.772 20.9999L-46.772 22.4999L-40.8161 22.5L-40.8161 21L-34.8603 21L-34.8603 22.5L-28.9044 22.5L-28.9044 21L-22.9485 21L-22.9485 22.5L-16.9926 22.5L-16.9926 21L-11.0367 21L-11.0367 22.5L-5.08086 22.5L-5.08086 21L0.875015 21L0.875015 22.5L6.8309 22.5L6.8309 21L12.7868 21L12.7868 22.5L18.7427 22.5L18.7427 21L24.6985 21L24.6985 22.5L30.6544 22.5L30.6544 21L36.6103 21L36.6103 22.5L42.5662 22.5L42.5662 21L48.5221 21L48.5221 22.5L51.5 22.5C52.4804 22.5 53.4584 22.5105 54.4338 22.5314L54.466 21.0318C56.4449 21.0743 58.4134 21.1592 60.3706 21.2857L60.2739 22.7826C62.2265 22.9088 64.1677 23.0768 66.0965 23.2857L66.258 21.7944C68.2241 22.0074 70.1776 22.2624 72.1176 22.5585L71.8912 24.0414C73.8259 24.3367 75.7469 24.6734 77.6534 25.0506L77.9445 23.5791C79.8847 23.9629 81.81 24.3882 83.7195 24.8539L83.3641 26.3112C85.2632 26.7744 87.1464 27.278 89.0128 27.8212L89.4319 26.3809C91.3291 26.9331 93.2092 27.5256 95.071 28.1575L94.5889 29.5779C96.4385 30.2056 98.2699 30.8726 100.082 31.5779L100.626 30.18C102.466 30.8962 104.287 31.6514 106.087 32.4446L105.482 33.8172C107.268 34.6044 109.034 35.4294 110.779 36.2913L111.443 34.9465C113.213 35.8207 114.96 36.7324 116.685 37.6806L115.962 38.995C117.672 39.935 119.359 40.9113 121.022 41.9228L121.802 40.6412C123.488 41.6663 125.149 42.7273 126.786 43.8229L125.951 45.0693C127.573 46.1546 129.169 47.2743 130.739 48.4275L131.627 47.2185C133.216 48.3859 134.779 49.5872 136.315 50.8212L135.375 51.9904C136.895 53.2119 138.388 54.4659 139.853 55.7513L140.842 54.6239C142.324 55.9243 143.777 57.2565 145.2 58.6194L144.163 59.7028C145.571 61.051 146.949 62.4295 148.297 63.8374L149.381 62.8C150.744 64.2234 152.076 65.6764 153.376 67.158L152.249 68.1475C153.534 69.612 154.788 71.1048 156.01 72.6249L157.179 71.6853C158.413 73.2209 159.614 74.784 160.782 76.3735L159.573 77.2614C160.726 78.8314 161.845 80.4275 162.931 82.0486L164.177 81.2141C165.273 82.8506 166.334 84.5124 167.359 86.1982L166.077 86.9776C167.089 88.641 168.065 90.3281 169.005 92.038L170.319 91.3154C171.268 93.04 172.179 94.7875 173.054 96.5569L171.709 97.2213C172.571 98.9658 173.396 100.732 174.183 102.518L175.555 101.913C176.349 103.713 177.104 105.534 177.82 107.374L176.422 107.918C177.127 109.73 177.794 111.562 178.422 113.411L179.843 112.929C180.474 114.791 181.067 116.671 181.619 118.568L180.179 118.987C180.722 120.854 181.226 122.737 181.689 124.636L183.146 124.281C183.612 126.19 184.037 128.115 184.421 130.056L182.949 130.347C183.327 132.253 183.663 134.174 183.959 136.109L185.441 135.882C185.738 137.822 185.993 139.776 186.206 141.742L184.714 141.904C184.923 143.832 185.091 145.774 185.217 147.726L186.714 147.629C186.841 149.587 186.926 151.555 186.968 153.534L185.468 153.566C185.489 154.542 185.5 155.52 185.5 156.5C185.5 157.48 185.489 158.458 185.468 159.434L186.968 159.466C186.926 161.445 186.841 163.413 186.714 165.371L185.217 165.274C185.091 167.227 184.923 169.168 184.714 171.097L186.206 171.258C185.993 173.224 185.738 175.178 185.441 177.118L183.959 176.891C183.663 178.826 183.327 180.747 182.949 182.653L184.421 182.945C184.037 184.885 183.612 186.81 183.146 188.72L181.689 188.364C181.226 190.263 180.722 192.146 180.179 194.013L181.619 194.432C181.067 196.329 180.474 198.209 179.842 200.071L178.422 199.589C177.794 201.439 177.127 203.27 176.422 205.082L177.82 205.626C177.104 207.466 176.349 209.287 175.555 211.087L174.183 210.482C173.396 212.268 172.571 214.034 171.709 215.779L173.053 216.443C172.179 218.213 171.268 219.96 170.319 221.685L169.005 220.962C168.065 222.672 167.089 224.359 166.077 226.023L167.359 226.802C166.334 228.488 165.273 230.149 164.177 231.786L162.931 230.952C161.845 232.573 160.726 234.169 159.572 235.739L160.781 236.627C159.614 238.216 158.413 239.779 157.179 241.315L156.01 240.375C154.788 241.895 153.534 243.388 152.249 244.853L153.376 245.842C152.076 247.324 150.743 248.777 149.381 250.2L148.297 249.163C146.949 250.571 145.57 251.949 144.163 253.297L145.2 254.381C143.777 255.744 142.324 257.076 140.842 258.376L139.853 257.249C138.388 258.534 136.895 259.788 135.375 261.01L136.315 262.179C134.779 263.413 133.216 264.614 131.626 265.782L130.739 264.573C129.169 265.726 127.572 266.845 125.951 267.931L126.786 269.177C125.149 270.273 123.488 271.334 121.802 272.359L121.022 271.077C119.359 272.089 117.672 273.065 115.962 274.005L116.685 275.319C114.96 276.268 113.212 277.179 111.443 278.054L110.779 276.709C109.034 277.571 107.268 278.396 105.482 279.183L106.087 280.555C104.287 281.349 102.466 282.104 100.626 282.82L100.082 281.422C98.2698 282.127 96.4384 282.794 94.5889 283.422L95.0709 284.843C93.2091 285.474 91.3291 286.067 89.4318 286.619L89.0127 285.179C87.1463 285.722 85.2631 286.226 83.364 286.689L83.7194 288.146C81.8099 288.612 79.8846 289.037 77.9444 289.421L77.6533 287.949C75.7468 288.327 73.8258 288.663 71.8911 288.959L72.1175 290.441C70.1775 290.738 68.224 290.993 66.2579 291.206L66.0964 289.714C64.1676 289.923 62.2264 290.091 60.2738 290.217L60.3705 291.714C58.4133 291.841 56.4448 291.926 54.4659 291.968L54.4337 290.469C53.4583 290.49 52.4804 290.5 51.4999 290.5L48.5221 290.5Z"
+          stroke="white" stroke-width="3" stroke-dasharray="6 6" />
+      </svg>
+      <div class="container mx-auto text-center">
+
+        <!-- Section Title -->
+        <h2 class="text-4xl mb-4">
+          Why <span class="text-blue-600">learn</span> with our courses?
+        </h2>
+        <p class="text-gray-200 mb-12 pb-20 text-xl w-1/3 mx-auto font-sans">
+          We are providing the best courses and top classes. And extraordinary placement training...
+        </p>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center border-r border-dotted border-gray-200">
+            <div class="w-15 h-15 flex justify-center items-center mb-4">
+              <img src="./assets/img/laptop-icon.png" alt="Learn Icon" class="w-15 h-15">
+            </div>
+            <h3 class="text-xl mb-2 font-serif">01. Learn</h3>
+            <p class="text-gray-200 w-2/5">
+              Learn continually. There is always "one more thing" to learn.
+            </p>
+          </div>
+          <div class="flex flex-col items-center border-r border-dotted border-gray-200">
+            <div class="w-15 h-15 flex justify-center items-center mb-4">
+              <img src="./assets/img/graduation-icon.png" alt="Graduation Icon" class="w-15 h-15">
+            </div>
+            <h3 class="text-xl mb-2">02. Graduate</h3>
+            <p class="text-gray-200 w-2/5">
+              Be bold, be courageous, be your best.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-15 h-15 flex justify-center items-center mb-4">
+              <img src="./assets/img/coder-icon.png" alt="Coder Icon" class="w-15 h-15">
+            </div>
+            <h3 class="text-xl mb-2">03. Work</h3>
+            <p class="text-gray-200 w-2/5">
+              Great companies are built in the office, with hard work put in by the team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
