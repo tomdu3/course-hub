@@ -57,6 +57,6 @@
 }
 
 .purple-pink {
-  background: rgb(25,1,248);
-background: linear-gradient(90deg, rgba(25,1,248,0.711922268907563) 45%, rgba(228,65,255,1) 100%);
+  background: rgb(179,238,234);
+background: linear-gradient(45deg, rgba(179,238,234,1) 0%, rgba(25,1,248,0.73) 31%, rgba(228,65,255,0.96) 100%);
 }
