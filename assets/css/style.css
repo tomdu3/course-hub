@@ -60,3 +60,13 @@
   background: rgb(179,238,234);
 background: linear-gradient(45deg, rgba(179,238,234,1) 0%, rgba(25,1,248,0.73) 31%, rgba(228,65,255,0.96) 100%);
 }
+
+.social-media {
+  background: rgb(178,177,186);
+background: linear-gradient(245deg, rgba(178,177,186,0.2665441176470589) 41%, rgba(255,255,255,0.06206232492997199) 100%);
+}
+
+.copyright {
+  background: rgb(100,100,102);
+  background: linear-gradient(245deg, rgba(100,100,102,0.1741071428571429) 100%, rgba(154,154,154,0.06206232492997199) 100%);
+}
