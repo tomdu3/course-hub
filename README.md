@@ -6,7 +6,7 @@
 
 ## Description of the Project
 
-Tom's Course Hub is a static website designed to showcase and promote online courses. The website provides information about various courses, categories, and testimonials from students. It also includes a subscription form for users to receive updates on new courses. The website is built using HTML, Tailwind CSS, and JavaScript, with a focus on responsive design and user-friendly navigation.
+Tom's Course Hub is a static website designed as a mockup of a webpage to showcase and promote online courses. The website provides information about various courses, categories, and testimonials from students. It also includes a subscription form for users to receive updates on new courses. The website is built using HTML, Tailwind CSS, and JavaScript, with a focus on responsive design and user-friendly navigation.
 
 The website features a hero section with a gradient background, a glowing circle effect, and a search bar for users to find courses. It also includes sections for featured courses, top categories, testimonials, and a subscription form. The footer contains links to different sections of the website, social media icons, and copyright information.
 
@@ -31,6 +31,7 @@ The website is hosted on *Netlify*: https://tom-courses-hub.netlify.app, and is 
 - **Other:**
   - [Favicon Generator](https://favicon.io/) - Used to generate favicons for the website.
   - [Random User Generator](https://randomuser.me/) - Used to generate random user images for testimonials and subscription sections.
+  - [CSS Gradient Generator](https://cssgradient.io/) - Used to generate gradients for the website.
 
 ## Rights Reserved
 
