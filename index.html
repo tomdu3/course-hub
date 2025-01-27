@@ -60,11 +60,11 @@
 
 <body>
   <!-- Header -->
-  <header class="px-6 lg:px-20 py-4 bg-white shadow">
-    <nav class="w-90% mx-auto flex justify-between items-center">
+  <header class="px-4 lg:px-20 py-4 bg-white shadow">
+    <nav class="w-80% mx-auto flex justify-between gap-10 items-center">
       <!-- Logo -->
       <div>
-        <img src="assets/img/logo.png" alt="logo" class="w-28">
+        <img src="assets/img/logo.png" alt="logo" class="w-20 md:w-28">
       </div>
 
       <!-- Navigation Links -->
@@ -75,6 +75,21 @@
         <li><a href="#" class="hover:text-blue-500">Contact</a></li>
       </ul>
 
+      <ul class="flex space-x-4 items-center">
+        <li class="relative">
+          <img src="./assets/img/basket.png" alt="Basket" class="w-4 h-4 md:w-6 md:h-6" />
+          <!-- Badge -->
+          <span class="absolute -top-3 -right-3 md:-top-2 md:-right-2 bg-green-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">
+            3
+          </span>
+        </li>
+        <li>
+          <img src="./assets/img/profile.png" alt="Profile" class="w-4 h-4 md:w-6 md:h-6" />
+        </li>
+        <li>
+          <img src="./assets/img/search.png" alt="Search" class="w-4 h-4 md:w-6 md:h-6" />
+        </li>
+      </ul>
       <!-- Buttons -->
       <div class="hidden md:flex space-x-4">
         <a href="#"
@@ -93,10 +108,10 @@
     <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 md:gap-60">
       <!-- Text Content -->
       <div>
-        <p class="uppercase tracking-wide font-serif text-sm md:mb-4">
+        <p class="uppercase tracking-wide font-serif text-xs md:text-sm md:mb-4">
           Successful coaches are visionaries
         </p>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-serif">
+        <h1 class="text-3xl text-center md:text-4xl xl:text-5xl md:text-left font-bold leading-tight font-serif">
           Good <span class="text-[#0E38CD]">coaching</span> is good teaching
           & nothing else.
         </h1>
@@ -168,7 +183,7 @@
   </section>
 
   <!-- Brands -->
-  <div class="brands flex px-10 justify-center md:space-x-20 xl:space-x-40 bottom-4 border-t border-gray-200 py-10 gap-4">
+  <div class="brands flex px-10 justify-center xl:space-x-40 bottom-4 border-t border-gray-200 py-10 gap-4 md:gap-8">
     <img src="./assets/img/spotify.png" alt="Spotify" class="h-4 md:h-8" />
     <img src="./assets/img/amazon.png" alt="Amazon" class="h-4 md:h-8" />
     <img src="./assets/img/spotify.png" alt="Spotify" class="h-4 md:h-8" />
