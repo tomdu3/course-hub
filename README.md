@@ -10,7 +10,7 @@ Tom's Course Hub is a static website designed to showcase and promote online cou
 
 The website features a hero section with a gradient background, a glowing circle effect, and a search bar for users to find courses. It also includes sections for featured courses, top categories, testimonials, and a subscription form. The footer contains links to different sections of the website, social media icons, and copyright information.
 
-The website is hosted on [Netlify](https://www.netlify.com): https://tom-courses-hub.netlify.app, and is optimized for mobile devices. It is also accessible to users with screen readers and keyboard navigation.
+The website is hosted on *Netlify*: https://tom-courses-hub.netlify.app, and is optimized for mobile devices. It is also accessible to users with screen readers and keyboard navigation.
 
 ## Technologies Used
 
